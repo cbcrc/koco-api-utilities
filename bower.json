@@ -1,0 +1,29 @@
+{
+  "name": "koco-api-utilities",
+  "version": "0.1.0",
+  "authors": [
+    "fcharest <frederik.charest@radio-canada.ca>"
+  ],
+  "description": "Restful API utilities to be used in a koco project.",
+  "main": "src/api-utilities.js",
+  "moduleType": [
+    "amd"
+  ],
+  "keywords": [
+    "rest",
+    "api",
+    "utilities"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.3",
+    "lodash": "~3.7.0"
+  }
+}
