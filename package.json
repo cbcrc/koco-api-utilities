@@ -1,11 +1,22 @@
 {
-  "name": "koco-api-utilities",
-  "version": "0.1.0",
-  "description": "Restful API utilities to be used in a koco project.",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "",
-  "license": "MIT"
+    "name": "koco-api-utilities",
+    "version": "0.1.0",
+    "authors": [
+        "fcharest <frederik.charest@radio-canada.ca>"
+    ],
+    "description": "Restful API utilities to be used in a koco project.",
+    "main": "src/api-utilities.js",
+    "keywords": [
+        "rest",
+        "api",
+        "utilities"
+    ],
+    "scripts": {
+        "build": "rm -rf dist && mkdir dist && cp -r src/* dist && rm -rf dist/*.js && babel src --out-dir dist --modules umd --presets es2015,stage-0"
+    },
+    "license": "MIT",
+    "dependencies": {
+        "jquery": "^2.1.3",
+        "lodash": "^3.7.0"
+    }
 }
