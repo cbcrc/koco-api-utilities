@@ -2,7 +2,7 @@
 // Licensed under the MIT license. See LICENSE file in the project root for full license information.
 
 import $ from 'jquery';
-import configs from 'configs';
+import configs from 'koco-configs';
 import _ from 'lodash';
 
 

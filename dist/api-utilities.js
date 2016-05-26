@@ -8,9 +8,9 @@ var _jquery = require('jquery');
 
 var _jquery2 = _interopRequireDefault(_jquery);
 
-var _configs = require('configs');
+var _kocoConfigs = require('koco-configs');
 
-var _configs2 = _interopRequireDefault(_configs);
+var _kocoConfigs2 = _interopRequireDefault(_kocoConfigs);
 
 var _lodash = require('lodash');
 
@@ -90,15 +90,15 @@ function tryGetApiBasePathFromConfigs(apiName) {
         throw new Error('koco-api-utilities - apiName parameter is required.');
     }
 
-    if (!_configs2.default || !_configs2.default.apis || !_configs2.default.apis[apiName]) {
+    if (!_kocoConfigs2.default || !_kocoConfigs2.default.apis || !_kocoConfigs2.default.apis[apiName]) {
         throw new Error('koco-api-utilities - no configs for \'' + apiName + '\'.');
     }
 
-    if (!_configs2.default.apis[apiName].baseUrl) {
+    if (!_kocoConfigs2.default.apis[apiName].baseUrl) {
         throw new Error('koco-api-utilities - no basePath config in configs for \'' + apiName + '\'.');
     }
 
-    return _configs2.default.apis[apiName].baseUrl;
+    return _kocoConfigs2.default.apis[apiName].baseUrl;
 }
 
 exports.default = new ApiUtilities();
