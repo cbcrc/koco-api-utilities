@@ -87,15 +87,15 @@ ApiUtilities.prototype.url = function (apiName, resourceName) {
 
 function tryGetApiBasePathFromConfigs(apiName) {
     if (!apiName) {
-        throw new Error('api-utilities - apiName parameter is required.');
+        throw new Error('koco-api-utilities - apiName parameter is required.');
     }
 
     if (!_configs2.default || !_configs2.default.apis || !_configs2.default.apis[apiName]) {
-        throw new Error('api-utilities - no configs for \'' + apiName + '\'.');
+        throw new Error('koco-api-utilities - no configs for \'' + apiName + '\'.');
     }
 
     if (!_configs2.default.apis[apiName].baseUrl) {
-        throw new Error('api-utilities - no basePath config in configs for \'' + apiName + '\'.');
+        throw new Error('koco-api-utilities - no basePath config in configs for \'' + apiName + '\'.');
     }
 
     return _configs2.default.apis[apiName].baseUrl;
